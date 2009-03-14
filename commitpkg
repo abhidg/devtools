@@ -26,6 +26,9 @@ if [ -z "$CARCH" ]; then
 fi
 
 source PKGBUILD
+if [ "$arch" == "any" ]; then
+    CARCH="$arch"
+fi
 pkgfile=${pkgname}-${pkgver}-${pkgrel}-${CARCH}.pkg.tar.gz
 oldstylepkgfile=${pkgname}-${pkgver}-${pkgrel}.pkg.tar.gz
 
