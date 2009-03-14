@@ -52,8 +52,6 @@ elif [ "$cmd" == "corepkg" ]; then
     repo="core"
 elif [ "$cmd" == "testingpkg" ]; then
     repo="testing"
-elif [ "$cmd" == "unstablepkg" ]; then
-    repo="unstable"
 elif [ "$cmd" == "communitypkg" ]; then
     repo="community"
 else
